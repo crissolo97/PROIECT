@@ -30,37 +30,155 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#create">Create accounts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#edit">Edit prices</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#joinus">Join Us</a>
+              <a class="nav-link js-scroll-trigger" href="#money">View Earnings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#stuff">View items used in surgeries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#logout">Log out</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
       
-    <section id="joinus">
+    <section id="create">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Join us today!</h2>
-            <p class="lead">Click the button to Sign In. Don't have an account? Click Register to create an account.</p>
-            <p> <a href="LogIn.html" class="btn btn-outline-info" role="button">Sign In</a> <a href="Register.html" class="btn btn-outline-warning" role="button">Register</a> </p>
+            <h2>Create doctor and secretary accounts</h2>
+              <hr>
+            <!-- Register Form -->
+		      <form>       
+                <p class="lead">Employee information</p>
+                  <hr>
+                  <input type="text" class="form-control" name="FirstName" placeholder=" First name" required="" autofocus="" />
+                  <br>
+                  <input type="text" class="form-control" name="LastName" placeholder="Last Name" required="" autofocus="" />
+                  <br>
+                  <input type="text" class="form-control" name="Email" placeholder="Email" required="" autofocus="" />
+                  <br>
+                  <input type="text" class="form-control" name="CNP" placeholder="CNP" required="" autofocus="" />
+                  <br>
+                  <input type="text" class="form-control" name="City" placeholder="City" required="" autofocus="" />
+                  <br>
+                  <input type="text" class="form-control" name="Adress" placeholder="Adress" required="" autofocus="" />
+                  <br>
+			      <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>
+                  <br>
+                  <input type="text" class="form-control" name="Telephone" placeholder="Telephone" required="" autofocus="" />
+                  <br>
+                  <!--Radio group-->
+                  <div class="radio">
+                <label><input type="radio" name="radioAsigurare" id="Asigurat" checked>Doctor</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="radioAsigurare" id="NoAsigurat">Secretary</label>
+                  </div>
+                 <!--Radio group-->  
+                  <br>
+                  <p><button class="btn btn-success btn-block">Register</button> <button class="btn btn-danger btn-block">Cancel</button></p>
+		      </form>	
+            <!-- Register Form -->
           </div>
         </div>
       </div>
     </section>
       
-    <section id="services" class="bg-light">
+    <section id="edit" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer: </h2>
-            <p class="lead">Ex: pacientul se poate programa online, doctorul poate sa faca etc. Check the project requirements de la lista lui stefaniga.</p>
+            <h2>Edit prices on appoitments and surgeries</h2>
+              <hr>
+            <p class="lead">List of prices:</p>
+            <!-- Table of prices-->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price ($)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Appoitment</td>
+                  <td>General Check-up</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Surgery</td>
+                  <td>Cataract Surgery</td>
+                  <td>666</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Surgery</td>
+                  <td>Gastric Bypass</td>
+                  <td>1997</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Table of prices -->
+            <p class="lead">Select a procedure:</p>
+            <hr>
+            <!-- Form for select a procedure-->
+              <Form>
+                <input type="text" class="form-control" name="Name" placeholder="Name" required="" autofocus="" />
+            <br>
+                <input type="text" class="form-control" name="New price" placeholder="New price" required="" autofocus="" />
+            <br>
+            <p> <a class="btn btn-outline-success" role="button"> Confirm change</a></p>
+              </Form>
+            <!-- Form for select a procedure-->
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section id="money">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>View earnings and balance</h2>
+              <hr>
+            <p class="lead">THIS IS ON YOU CRISTINA!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section id="stuff" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>View items used in surgeries</h2>
+              <hr>
+            <p class="lead">Still on you Cristina! :) </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section id="logout">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Log Out!</h2>
+              <hr>
+            <p class="lead">Click the button to leave.</p>
+            <p> <a href="MainScreen.html" class="btn btn-outline-info" role="button">Log Out</a></p>
           </div>
         </div>
       </div>
