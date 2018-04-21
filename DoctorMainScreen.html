@@ -16,10 +16,10 @@
     <!-- Custom styles for this page -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+ 
   </head>
-
   <body id="page-top">
-
+      
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
@@ -51,7 +51,7 @@
             <p class="lead">List of appoitments: </p>
               <hr>
             <!-- Table of appoitments-->
-            <table class="table table-hover">
+            <table  id="table" class="table table-hover" style="width:100%">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -59,31 +59,50 @@
                   <th scope="col">Hour</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Ariana Iancu</td>
-                  <td>14:00</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Cristina Solomon</td>
-                  <td>18:00</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Bogdan Ponta</td>
-                  <td>20:00</td>
-                </tr>
-              </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ariana Iancu</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Cristina Solomon</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Bogdan Ponta</td>
+                        <td>20:00</td>
+                    </tr>
+                </tbody>
             </table>
+              
+            <script>
+    
+                var table = document.getElementById('table');
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                         //rIndex = this.rowIndex;
+                         document.getElementById("Name").value = this.cells[1].innerHTML;
+                         document.getElementById("Hour").value = this.cells[2].innerHTML;
+                         
+                    };
+                }
+                
+    
+         </script>  
+            
             <!-- Form for select a patient-->
             <p class="lead">Select a patient to consult: </p>
             <hr>
               <Form>
-                <input type="text" class="form-control" name="Name" placeholder="Name" required="" autofocus="" />
+                <input type="text" class="form-control" name="Name" placeholder="Name" id="Name" />
             <br>
-                <input type="text" class="form-control" name="Hour" placeholder="Hour" required="" autofocus="" />
+                <input type="text" class="form-control" name="Hour" placeholder="Hour" id="Hour" />
             <br>
             <p> <a href="ConsultationScreen.html" class="btn btn-outline-info" role="button"> Consult the patient</a></p>
               </Form>
@@ -100,7 +119,7 @@
             <p class="lead">List of procedures: </p>
               <hr>
             <!-- Table of surgeries-->
-            <table class="table table-hover">
+            <table id="table1" class="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -130,13 +149,32 @@
                 </tr>
               </tbody>
             </table>
+              
+              <script>
+               var table1 = document.getElementById('table1');
+                
+                for(var i = 1; i < table1.rows.length; i++)
+                {
+                    table1.rows[i].onclick = function()
+                    {
+                         //rIndex = this.rowIndex;
+                         document.getElementById("Name1").value = this.cells[1].innerHTML;
+                         document.getElementById("Hour1").value = this.cells[2].innerHTML;
+                         
+                    };
+                }
+    
+         </script>  
+              
+              
+              
             <!-- Form for select a surgery-->
             <p class="lead">Select a patient: </p>
             <hr>
               <Form>
-                <input type="text" class="form-control" name="Name" placeholder="Name" required="" autofocus="" />
+                <input type="text" class="form-control" name="Name" placeholder="Name" id="Name1"  />
             <br>
-                <input type="text" class="form-control" name="Hour" placeholder="Hour" required="" autofocus="" />
+                <input type="text" class="form-control" name="Hour" placeholder="Hour" id="Hour1"  />
             <br>
             <p> <a href="ConsultationScreen.html" class="btn btn-outline-info" role="button"> Start surgery</a></p>
               </Form>
