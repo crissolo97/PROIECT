@@ -30,37 +30,76 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#exdet"> Examination Details</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#medref">Medical Referral Letter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#joinus">Join Us</a>
+              <a class="nav-link js-scroll-trigger" href="#"></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
       
-    <section id="joinus">
+    <section id="exdet">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Join us today!</h2>
-            <p class="lead">Click the button to Sign In. Don't have an account? Click Register to create an account.</p>
-            <p> <a href="LogIn.html" class="btn btn-outline-info" role="button">Sign In</a> <a href="Register.html" class="btn btn-outline-warning" role="button">Register</a> </p>
+        <div class="col-lg-8 mx-auto">
+            <form>       
+                <h2>Examination Details</h2>
+                  <hr><br>
+                <p style="color:cornflowerblue; font-size: 23px;">Departament</p>
+                    <select class="form-control " name="Depatament" placeholder="Depatament">
+                        <option>depart1</option>
+                        <option>depart2</option>
+                        <option>depart3</option>
+                        <option>depart4</option>
+                    </select>
+                  <br>
+                 
+                     <p style="color:cornflowerblue; font-size: 23px;">Date & Hour</p>
+                    <input class="form-control " id="date" name="date" type="datetime-local"/>
+                  <br>
+                    <p style="color:cornflowerblue; font-size: 23px;">Emergency</p>
+                    <label style="margin-left:2.5em; margin-right:2.5em" class="checkbox-inline">
+                        <input type="checkbox" value="">Yes    
+                    </label>
+                    
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">No
+                    </label>
+                    <br>
+                  
+                  <p style="color:cornflowerblue; font-size: 23px;">Examination type</p>
+                    <select class="form-control " name="Extype" placeholder="Extype">
+                        <option>type1</option>
+                        <option>type2</option>
+                        <option>type3</option>
+                        <option>type4</option>
+                    </select>
+                  
+                  <br>
+                    <p style="color:cornflowerblue; font-size: 23px;">Diagnosis</p>
+                  <input type="text" size= "20px" class="form-control" name="Diagnosis" placeholder="Diagnosis"/>
+                  <br>
+                  
+                  <a href="#medref" class="btn btn-secondary btn-block" role="button">Edit Medical Referral Letter </a>
+                <a href=#done class="btn btn-success btn-block" role="button">Done</a>
+                  
+		      </form>
           </div>
         </div>
-      </div>
     </section>
       
-    <section id="services" class="bg-light">
+    <section id="medref" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer: </h2>
-            <p class="lead">Ex: pacientul se poate programa online, doctorul poate sa faca etc. Check the project requirements de la lista lui stefaniga.</p>
+            <h2>Medical referral letter</h2>
+              <hr>
+              
+            
           </div>
         </div>
       </div>
