@@ -1,3 +1,5 @@
-# proiect8
+# Proiect Colectiv - Echipa Proiectul Nr.8
 
-what's good!
+Proiectul 8 - Managmentul unui spital
+
+What's good!
