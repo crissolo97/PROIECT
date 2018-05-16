@@ -62,13 +62,17 @@
                     <input class="form-control " id="date" name="date" type="datetime-local"/>
                   <br>
                     <p style="color:cornflowerblue; font-size: 23px;">Emergency</p>
-                    <label style="margin-left:2.5em; margin-right:2.5em" class="checkbox-inline">
-                        <input type="checkbox" value="">Yes    
-                    </label>
+                   
+                
+                
+                <!--Emergency-->
+                  <div class="radio">
+                    <label><input style="margin-left:2.5em; margin-right:2.5em" type="radio" name="emergency" id="yes" checked>Yes</label>
+                  </div>
+                <div class="radio">
+                    <label><input style="margin-left:2.5em; margin-right:2.5em" type="radio" name="emergency" id="no" checked>No</label>
+                  </div>
                     
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">No
-                    </label>
                     <br>
                   
                   <p style="color:cornflowerblue; font-size: 23px;">Examination type</p>
@@ -86,6 +90,7 @@
                   
                   <a href="#medref" class="btn btn-secondary btn-block" role="button">Edit Medical Referral Letter </a>
                 <a href=#done class="btn btn-success btn-block" role="button">Done</a>
+                 <a href="DoctorMainScreen.html" class="btn btn-block btn-danger" role="button">Cancel</a>
                   
 		      </form>
           </div>
