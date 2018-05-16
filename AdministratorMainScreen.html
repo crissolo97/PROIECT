@@ -30,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#create">Create accounts</a>
+              <a class="nav-link js-scroll-trigger" href="#createAccount">Create accounts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#edit">Edit prices</a>
+              <a class="nav-link js-scroll-trigger" href="#editPrice">Edit prices</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#money">View Earnings</a>
+              <a class="nav-link js-scroll-trigger" href="#earnings">View Earnings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#stuff">View items used in surgeries</a>
+              <a class="nav-link js-scroll-trigger" href="#itemsUsedSrg">View items used in surgeries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#logout">Log out</a>
@@ -49,7 +49,7 @@
       </div>
     </nav>
       
-    <section id="create">
+    <section id="createAccount">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -92,7 +92,7 @@
       </div>
     </section>
       
-    <section id="edit" class="bg-light">
+    <section id="editPrice" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -100,7 +100,7 @@
               <hr>
             <p class="lead">List of prices:</p>
             <!-- Table of prices-->
-            <table class="table table-hover">
+            <table id="table" class="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -130,14 +130,31 @@
                 </tr>
               </tbody>
             </table>
+            
+            <script>
+               var table = document.getElementById('table');
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                         
+                         document.getElementById("Name").value = this.cells[2].innerHTML;
+                         
+                    };
+                }
+    
+            </script>  
+              
+              
             <!-- Table of prices -->
             <p class="lead">Select a procedure:</p>
             <hr>
             <!-- Form for select a procedure-->
               <Form>
-                <input type="text" class="form-control" name="Name" placeholder="Name" required="" autofocus="" />
+                <input type="text" class="form-control" name="Name" placeholder="Name" id="Name" />
             <br>
-                <input type="text" class="form-control" name="New price" placeholder="New price" required="" autofocus="" />
+                <input type="text" class="form-control" name="New price" placeholder="New price" id="New Price" />
             <br>
             <p> <a class="btn btn-outline-success" role="button"> Confirm change</a></p>
               </Form>
@@ -147,7 +164,7 @@
       </div>
     </section>
       
-    <section id="money">
+    <section id="earnings">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -159,7 +176,7 @@
       </div>
     </section>
       
-    <section id="stuff" class="bg-light">
+    <section id="itemsUsedSrg" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
