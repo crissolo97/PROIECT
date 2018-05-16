@@ -86,14 +86,13 @@
                 {
                     table.rows[i].onclick = function()
                     {
-                         //rIndex = this.rowIndex;
+                         
                          document.getElementById("Name").value = this.cells[1].innerHTML;
                          document.getElementById("Hour").value = this.cells[2].innerHTML;
                          
                     };
                 }
-                
-    
+        
          </script>  
             
             <!-- Form for select a patient-->
@@ -178,7 +177,7 @@
             <br>
                 <input type="text" class="form-control" name="Hour" placeholder="Hour" id="Hour1"  />
             <br>
-            <p> <a href="ConsultationScreen.html" class="btn btn-outline-info" role="button"> Start surgery</a></p>
+            <p> <a href="Surgery.html" class="btn btn-outline-info" role="button"> Start surgery</a></p>
               </Form>
             <!-- Form for select a surgery-->
           </div>
