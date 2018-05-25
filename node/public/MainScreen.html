@@ -11,10 +11,34 @@
     <title>PC Hospital Homepage</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/bower_components/boostrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/boostrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+      
+    <!-- Style for image gallery -->
+    <style>
+        div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+        div.gallery:hover {
+    border: 1px solid #777;
+}
+
+        div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+        div.desc {
+    padding: 15px;
+    text-align: center;
+}
+  </style>
 
   </head>
 
@@ -47,7 +71,7 @@
     <header class="bg-primary text-white">
       <div class="container text-center">
         <h1>Welcome to PC Hospital</h1>
-        <p class="lead">I dunno put a slogan here. Just pick something. Also you can put an img somehow. Dunno how.</p>
+        <p class="lead">Quality care, close to home!</p>
       </div>
     </header>
 
@@ -55,16 +79,38 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
+            <h2>About us</h2>
               <hr>
-            <p class="lead">Here you write about the hospital. Be creative. Btw sunt implementate:</p>
+            <p class="lead">We are a hospital that provides a site for:</p>
             <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Have fun Cristina! Go wild.</li>
+              <li>Our pacients, after they create an account.</li>
+              <li>Our registered doctors, who are now able to check their work anytime!</li>
+              <li>Our secretary, they can check the curent status from anywhere.</li>
+              <li>Our administrators, that can manage the hospital.</li>
             </ul>
+              <br>
+              <p class="lead">Create an account today to use our services!</p>
+              <div class="gallery">
+                <a target="_blank" href="pictures/hospital1.jpg">
+                <img src="pictures/hospital1.jpg" alt="Hospital Room" width="300" height="200">
+                  </a>
+                  <div class="desc">Hospital room</div>
+              </div>
+  
+              <div class="gallery">
+                  <a target="_blank" href="pictures/hospital2.jpg">
+                      <img src="pictures/hospital2.jpg" alt="Main Entrance" width="300" height="200">
+                  </a>
+            <div class="desc">Main Entrance</div>
+              </div>
+              
+            <div class="gallery">
+                    <a target="_blank" href="pictures/hospital3.jpg">
+                        <img src="pictures/hospital3.jpg" alt="Surgery room" width="300" height="200">
+                    </a>
+            <div class="desc">Surgery room</div>
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -73,9 +119,37 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer: </h2>
+            <h2>Services</h2>
               <hr>
-            <p class="lead">Ex: pacientul se poate programa online, doctorul poate sa faca etc. Check the project requirements de la lista lui stefaniga.</p>
+            <p class="lead">We offer: </p>
+            <ul>
+              <li>An easy way to make an appoitment online, anytime you want.</li>
+              <li>The ability to check your results, as a pacient, from the comfort of your home!</li>
+              <li>Professional trained staff, ready to help you.</li>
+            </ul>
+              
+                 <div class="gallery">
+                  <a target="_blank" href="pictures/hospital4.jpg">
+                      <img src="pictures/hospital4.jpg" alt="Doctors" width="300" height="200">
+                  </a>
+            <div class="desc">Our doctors</div>
+              </div>
+              
+
+                 <div class="gallery">
+                  <a target="_blank" href="pictures/hospital6.jpg">
+                      <img src="pictures/hospital6.jpg" alt="Staff" width="300" height="200">
+                  </a>
+            <div class="desc">An office</div>
+              </div>
+              
+            <div class="gallery">
+                  <a target="_blank" href="pictures/hospital5.jpg">
+                      <img src="pictures/hospital5.jpg" alt="Nurse" width="300" height="200">
+                  </a>
+            <div class="desc">Our nurses</div>
+              </div>
+              
           </div>
         </div>
       </div>
